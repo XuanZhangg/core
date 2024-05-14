@@ -4,16 +4,16 @@ modeler-version=master
 
 prepare_parsers:
 	mkdir -p build
-	cd build && git clone --single-branch -b $(parsers-version) https://github.com/crimson-unicorn/parsers.git
+	cd build && git clone --single-branch -b $(parsers-version) https://github.com/xuanzhangg/parsers.git
 
 prepare_analyzer:
 	mkdir -p build
-	cd build && git clone --single-branch -b $(analyzer-version) https://github.com/crimson-unicorn/analyzer.git
+	cd build && git clone --single-branch -b $(analyzer-version) https://github.com/xuanzhangg/analyzer.git
 	cd build/analyzer && make sb
 
 prepare_modeler:
 	mkdir -p build
-	cd build && git clone --single-branch -b $(modeler-version) https://github.com/crimson-unicorn/modeler.git
+	cd build && git clone --single-branch -b $(modeler-version) https://github.com/xuanzhangg/modeler.git
 
 prepare_output:
 	mkdir -p output
